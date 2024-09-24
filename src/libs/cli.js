@@ -14,7 +14,7 @@ export const cli = {
     const selected = prompt("Enter your move: ");
     console.log("Move selected:", moves[selected - 1]);
 
-    if (selected >= 0 && selected <= moves.length && selected != "") {
+    if (selected > 0 && selected <= moves.length && selected != "") {
       return selected -1;
     }
 
